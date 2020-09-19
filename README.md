@@ -2,45 +2,51 @@
 
 An incident is an event that could lead to loss of, or disruption to, an organization's operations, services or functions. Incident management is a term describing the activities of an organization to identify, analyze, and correct hazards to prevent a future re-occurrence.
 
-###Routes
+##Routes
 - GET /api/incidents - Retrieve Data
 - POST /api/incidents - Store JSON Data
 
-## Learning Laravel
+## Requirements
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- [php 7.4](https://www.php.net/)
+- MySql Database: [MySql](https://www.mysql.com)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Installation
 
-## Laravel Sponsors
+- Clone the repo
+- Run command `composer install`
+- Copy the .env.example to your own file: `cp .env.example .env`
+- Set the config like `DB_HOST`, `DB_DATABASE` etc. in `.env`
+- Start the server: `php artisan serve`
+- Open the url: <http://127.0.0.1:8000>
+- Use Postman or any other REST client to run api
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+##API payload example
+- POST /api/incidents
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+`{
+   "location": {
+     "latitude": 12.9231501,
+     "longitude": 74.781851
+   },
+   "title": "incident title",
+   "category": "",
+   "people": [
+     {
+       "name": "Name of person",
+       "type": "staff"
+     },
+     {
+       "name": "Name of person",
+       "type": "witness"
+     },
+     {
+       "name": "Name of person",
+       "type": "staff"
+     }
+   ],
+   "comments": "This is a string of comments",
+   "incidentDate": "2020-09-01T13:26:00+00:00",
+   "createDate": "2020-09-01T13:32:59+01:00",
+   "modifyDate": "2020-09-01T13:32:59+01:00"
+ }`
