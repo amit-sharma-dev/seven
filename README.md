@@ -18,10 +18,13 @@ An incident is an event that could lead to loss of, or disruption to, an organiz
 - Copy the .env.example to your own file: `cp .env.example .env`
 - Set the config like `DB_HOST`, `DB_DATABASE` etc. in `.env`
 - Run the migration: `php artisan migrate`
+- Generate Key: `php artisan key:generate`
 - Start the server: `php artisan serve`
 - Open the url: <http://127.0.0.1:8000>
 - Use Postman or any other REST client to run api
 
+## Run Unit Test
+- `php artisan test`
 ## API payload example
 - POST /api/incidents
 

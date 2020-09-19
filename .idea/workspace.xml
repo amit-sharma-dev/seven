@@ -150,7 +150,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../code/cdp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -172,7 +172,8 @@
       <workItem from="1600434313952" duration="10050000" />
       <workItem from="1600500708446" duration="6995000" />
       <workItem from="1600510100151" duration="879000" />
-      <workItem from="1600511379808" duration="224000" />
+      <workItem from="1600511379808" duration="436000" />
+      <workItem from="1600512110317" duration="75000" />
     </task>
     <servers />
   </component>
@@ -184,10 +185,10 @@
       <screen x="49" y="27" width="1317" height="741" />
     </state>
     <state x="440" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/49.27.1317.741@49.27.1317.741" timestamp="1600443760906" />
-    <state x="490" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1600438827685">
+    <state x="490" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1600511814439">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state x="490" y="154" width="424" height="484" key="FileChooserDialogImpl/49.27.1317.741@49.27.1317.741" timestamp="1600438827685" />
+    <state x="490" y="154" width="424" height="484" key="FileChooserDialogImpl/49.27.1317.741@49.27.1317.741" timestamp="1600511814439" />
     <state x="466" y="116" width="537" height="561" key="NewPhpClassDialog" timestamp="1600443736290">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
