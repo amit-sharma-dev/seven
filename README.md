@@ -8,8 +8,8 @@ An incident is an event that could lead to loss of, or disruption to, an organiz
 
 ## Requirements
 
-- [php 7.4](https://www.php.net/)
-- MySql Database: [MySql](https://www.mysql.com)
+- Language: [php 7.4](https://www.php.net/)
+- Database: [MySql](https://www.mysql.com)
 
 ## Installation
 
