@@ -58,6 +58,8 @@ class IncidentManagementController extends BaseApiController
             'location.longitude' => ['required', 'regex:/^[-]?((((1[0-7][0-9])|([0-9]?[0-9]))(\.(\d+))?)|180(\.0+)?)$/'],
             'category' => 'required|numeric|in:1,2,3',
             'incidentDate' => 'required|date',
+            'createDate' => 'date',
+            'modifyDate' => 'date',
             'people.*' => 'required|array',
             'people.*.type' => 'in:witness,staff',
             'title' => 'required|string'
@@ -79,6 +81,9 @@ class IncidentManagementController extends BaseApiController
             $incident->createDate = Carbon::parse($request->createDate)->toDateTimeString();
         }
 
+        if (!empty($request->modifyDate)) {
+            $incident->modifyDate = Carbon::parse($request->modifyDate)->toDateTimeString();
+        }
         try {
             $incident->save();
 
