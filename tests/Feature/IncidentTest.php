@@ -8,12 +8,12 @@ use Tests\TestCase;
 class IncidentTest extends TestCase
 {
 
-    public function testDatabase()
+    /*public function testDatabase()
     {
         $this->assertDatabaseHas('peoples', [
             'type' => 'staff',
         ]);
-    }
+    }*/
 
     /**
      * A basic feature test example.
